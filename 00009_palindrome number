@@ -1,0 +1,18 @@
+package main
+
+func isPalindrome(x int) bool {
+    answer := true
+    stringValue := strconv.Itoa(x)
+    i := 0
+    j := len(stringValue) - 1
+
+    for i < j {
+        if stringValue[i] != stringValue[j] {
+            answer = false
+        }
+        i++
+        j--
+    }
+
+    return answer
+}
